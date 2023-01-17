@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: roboto, sans-serif;
+}
+
+.point_i {
+  position: absolute;
+  top: 4px;
+  left: 15.5px;
+  background-color: #2de81a;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+
+.draw_x {
+  position: absolute;
+  top: 7px;
+  right: 10px;
+  background-color: #2de81a;
+  width: 5px;
+  height: 25px;
+  transform: skewX(-35deg);
+  border-radius: 0 0 100px 0;
+}
+
+.draw_x2 {
+  position: absolute;
+  top: -17px;
+  right: 14px;
+  background-color: transparent;
+  width: 60px;
+  height: 60px;
+  border-bottom: 5px;
+  border-style: solid;
+  border-color: #2de81a;
+  border-radius: 50%;
+  transform: rotateZ(-10deg);
+}
+
+.link {
+  background-color: #294e6d;
+  box-shadow: 0px 18px 14px -19px #4977a5;
+  color: white;
+}
+
+.profile {
+  background: rgba(41, 78, 109, 0.04);
+}
+
+.content_layout {
+  background: rgba(41, 78, 109, 0.05);
+}
+
+.chart_result {
+  background: rgba(41, 78, 109, 0.05);
+}
+
+.box_result {
+  background-color: #6bcf4f42;
+  color: #4da634;
+}
+
+.recent {
+  border: 3px solid rgba(41, 78, 109, 0.141);
+  border-radius: 20px;
+}
+
+.list_item {
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.list_item:hover,
+.list_item.active {
+  background: rgba(41, 78, 109, 0.09);
+  transition: background 200ms linear;
+}
+
+.settings_list_top {
+  border-bottom: 2px solid rgba(41, 78, 109, 0.2);
+}
+
+.cancel {
+  background: rgba(41, 78, 109, 0.1);
+}
